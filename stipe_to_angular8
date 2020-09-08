@@ -40,8 +40,7 @@ The loadStripe the method will add the script dynamically when the component wil
 Next, Create a new method calledpaywhich will open the stripe payment form.
 
 pay(amount) {   
-
-    var handler = (window).StripeCheckout.configure({
+    var handler = (<any>window).StripeCheckout.configure({
       key: 'pk_test_aeUUjYYcx4XNfKVW60pmHTtI',
       locale: 'auto',
       token: function (token: any) {
